@@ -1,0 +1,91 @@
+/* Definición de variables CSS */
+:root {
+  --main-bg-color: gray;
+  --main-text-color: black;
+  --button-bg-color: #fff;
+  --button-text-color: black;
+  --shadow-color: #646cffaa;
+  --react-shadow-color: #61dafbaa;
+  --border-radius: 15px;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  color: var(--main-text-color);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  background: var(--main-bg-color);
+  border-radius: var(--border-radius);
+  margin-bottom: 30px;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  margin-bottom: 10px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--shadow-color));
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em var(--react-shadow-color));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  .form, .card {
+    padding: 1em;
+  }
+
+  .logo {
+    height: 4em;
+    padding: 1em;
+  }
+}
